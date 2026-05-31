@@ -290,6 +290,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Hardoon, D. R., Szedmák, S., & Shawe-Taylor, J. (2004). Canonical correlation analysis: An overview with application to learning methods. Neural Computation, 16(12), 2639-2664.
 - Murphy, K. P. (2012). Machine Learning: A Probabilistic Perspective. MIT Press.
 - Von Storch, H., & Zwiers, F. W. (1999). Statistical Analysis in Climate Research. Cambridge University Press.
+- Vaittinada Ayar, P., Battisti, D. S., Li, C., King, M., Vrac, M., & Tjiputra, J. (2023). A regime view of ENSO flavors through clustering in CMIP6 models. *Earth's Future*, 11, e2022EF003460. https://doi.org/10.1029/2022EF003460
+- Schlör, J., Strnad, F., Capotondi, A., & Goswami, B. (2024). Contribution of El Niño Southern Oscillation (ENSO) diversity to low-frequency changes in ENSO variance. *Geophysical Research Letters*, 51, e2024GL109179. https://doi.org/10.1029/2024GL109179
 
 ## Contact
 
