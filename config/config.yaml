@@ -1,0 +1,72 @@
+# Configuration file for GMM Clustering Analysis
+
+# Data paths
+data:
+  sst_file: "data/raw/sst.nc"
+  precip_file: "data/raw/precip.nc"
+  processed_dir: "data/processed/"
+
+# Preprocessing parameters
+preprocessing:
+  # Remove climatology (seasonal cycle)
+  remove_climatology: true
+  # Standardize (z-score normalization)
+  standardize: true
+  # Detrending options: none, linear, polynomial
+  detrending: "linear"
+  # Temporal subset (optional)
+  start_date: null
+  end_date: null
+
+# PCA parameters
+pca:
+  # Number of principal components to retain
+  n_components: 10
+  # Variance explained threshold (if n_components not specified)
+  variance_threshold: 0.90
+  # Scaling method: standard, robust
+  scaling: "standard"
+
+# CCA parameters
+cca:
+  # Number of canonical variates
+  n_components: 5
+  # Regularization parameter (if needed)
+  reg_param: 0.0
+  # Max iterations for convergence
+  max_iter: 1000
+
+# GMM parameters
+gmm:
+  # Range of cluster numbers to test
+  n_clusters_min: 2
+  n_clusters_max: 10
+  # Covariance type: full, tied, diag, spherical
+  covariance_type: "full"
+  # Initialization method: kmeans, random
+  init_params: "kmeans"
+  # Max iterations for convergence
+  max_iter: 100
+  # Random state for reproducibility
+  random_state: 42
+  # Selection criterion: bic, aic, silhouette
+  selection_criterion: "bic"
+
+# Visualization parameters
+visualization:
+  # Figure format: png, pdf, jpg
+  format: "png"
+  # DPI for output figures
+  dpi: 300
+  # Figure size (width, height) in inches
+  figsize: [12, 8]
+  # Color map
+  cmap: "RdBu_r"
+  # Font size
+  fontsize: 12
+
+# Output paths
+output:
+  figures_dir: "results/figures/"
+  models_dir: "results/models/"
+  reports_dir: "results/reports/"
